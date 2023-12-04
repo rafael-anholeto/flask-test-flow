@@ -18,7 +18,7 @@ class BookRepository:
         return jsonify(serialized_books)
 
 
-    def get_book(book_id):
+    def get_books_by_id(book_id):
         for book in books:
             if book.id == book_id:  # Comparando o atributo id do objeto Book
                 return jsonify(book.serialize())

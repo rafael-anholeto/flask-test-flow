@@ -6,21 +6,21 @@ class BookService:
     def __init__(self):
         self.book_repository = BookRepository()
 
-    def get_books(self):
-        return self.book_repository.get_all_books()
+    def get_books():
+        return BookRepository.get_books()
 
-    def get_book(self, book_id):
-        return self.book_repository.get_book_by_id(book_id)
+    def get_books_by_id(book_id):
+        return BookRepository.get_books_by_id(book_id)
     
-    def create_book(self):
-        return self.book_repository.create_book()
-    
-    
-    def update_book(self, book_id):
-        return self.book_repository.update_book(book_id)
+    def create_book():
+        return BookRepository.create_book()
     
     
-    def delete_book(self, book_id):
-        return self.book_repository.delete_book(book_id)
+    def update_book( book_id):
+        return BookRepository.update_book(book_id)
+    
+    
+    def delete_book(book_id):
+        return BookRepository.delete_book(book_id)
 
 
