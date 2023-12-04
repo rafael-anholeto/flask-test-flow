@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, abort, make_response
 from datetime import datetime
-from models import Book
+from app.models import Book
 
 
 app = Flask(__name__)
@@ -79,3 +79,32 @@ def delete_book(book_id):
     books.remove(book[0])
     
     return jsonify({'result': True})
+
+
+
+
+
+# # run.py
+
+# from flask import Flask
+# # from app.config.config import DevelopmentConfig
+# from app.controllers.book_controller import book_bp
+
+# app = Flask(__name__)
+# # app.config.from_object(DevelopmentConfig)
+
+# app.register_blueprint(book_bp)
+
+# if __name__ == '__main__':
+#     app.run()
+
+
+
+
+from flask import Flask, request, jsonify, abort, make_response
+
+
+app = Flask(__name__)
+
+if __name__ == '__main__':
+    app.run()
