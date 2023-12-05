@@ -10,3 +10,5 @@ app.register_blueprint(book_bp)
 
 if __name__ == '__main__':
     app.run()
+
+
